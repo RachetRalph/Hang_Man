@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> GOT | HANGMAN </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  </head>
+  <body>
+  <!-- Style -->
+  <style>
+  h3{
+    color: black;
+  }
+    .header{
+      text-align: center;
+    }
+  </style>
+  <div class="container">
+      <div class="header">
+        <a href="index.html">
+          <img src="assets/images/got.png" alt="logo" >
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h1> ULTIMATE GAME OF THRONES HANGMAN</h1>
+          <h2> Press any key to get started</h2>
+
+              <p>Guesses Left: <span id="guesses-left"></span></p>
+              <p>Wrong Guesses: <span id="wrong-guesses"></span></p>
+              <p>Wins: <span id="win-counter"></span></p>
+              <p>"Losses:" <span id="loss-counter"></span></p>
+
+              <h3 id="word-blank"></h3>
+              <button id="play" onclick=reloadPage()>Click to Start Game</button>
+
+        </div>
+      </div>
+    </div>
+<script type="text/javascript" src="assets/logic/hang.js" ></script>
+  </body>
+</html>
